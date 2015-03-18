@@ -1,0 +1,6 @@
+library(ISLR)
+attach(OJ)
+set.seed(1)
+train = sample(dim(OJ)[1], dim(OJ)[1]/2)
+OJ.train = OJ[train, ]
+OJ.test = OJ[-train, ]
